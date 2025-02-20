@@ -1,152 +1,165 @@
-# Ecommerce-Follow-Along
+Ecommerce-Follow-Along
 
-# Milestone 1 - Project Overview :
-The Ecommerce-Follow-Along project aims to build a fully-functional e-commerce application using the MERN stack (MongoDB, Express.js, React.js, and Node.js)
-Key Features :
-User Authentication: Secure user login and registration functionality.
-Product Management: Add, update, and retrieve product data.
-Order Handling: Manage customer orders with backend integration.
-REST API: Build scalable and secure APIs for communication between client and server.
-MongoDB Schema Design: Design and implement structured data models for managing users, products, and orders.
-Tech Stack :
-Frontend : React.js
-Backend : Node.js, Express.js
-Database : MongoDB
-Authentication : JWT (JSON Web Tokens) for secure login
-Introduction to MERN Stack : You gained an understanding of the MERN stack (MongoDB, Express.js, React.js, and Node.js) and its role in building full-stack web applications. The lesson highlighted the advantages of using JavaScript across both the frontend and backend, simplifying development.
-Project Overview : You were introduced to the goals and key features of the "Ecommerce-Follow-Along" project, which includes user authentication, product management, and order handling, all built with the MERN stack.
-API Structure and Endpoints : You learned about REST APIs and how they enable communication between the client and server. Key endpoints will be built for user registration, login, product management, and order handling.
-Database Schema Design : The importance of schema design in MongoDB was covered, with a focus on creating structured models for data like users, products, and orders.
-Authentication Basics : You learned the significance of user authentication in web applications, ensuring secure access to sensitive resources like purchases and personal information.
 
-# Milestone 2: Project Setup and Login Page
-This milestone focuses on setting up the project structure and implementing a basic login page.
+Milestone 1: Project Overview
+The Ecommerce-Follow-Along project is focused on building a complete e-commerce application using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+
 Key Features
-Project Setup: Initialized the project with the required dependencies and folder structure.
-Login Page: A simple login page with fields for username and password.
-Tech Stack Used
-Frontend: React, Tailwindcss
+User Authentication: Secure user login and registration.
+Product Management: Add, update, and manage product details.
+Order Handling: Seamlessly handle customer orders.
+REST API: Build scalable and secure APIs to connect frontend and backend.
+MongoDB Schema Design: Create structured data models for users, products, and orders.
+Tech Stack
+Frontend: React.js
+Backend: Node.js, Express.js
+Database: MongoDB
+Authentication: JWT (JSON Web Tokens)
+Learning Highlights
+Introduction to the MERN Stack: Understanding the advantages of JavaScript for both frontend and backend development.
+API Structure: Exploring REST APIs for user authentication, product management, and order handling.
+Schema Design: Learning the importance of structured models in MongoDB.
 
-# Milestone 3: Server setup and error handling.
-Key Features:
-Organized backend code with a clear folder structure.
-Configured a Node.js server using Express to handle APIs.
-Integrated MongoDB for data storage and management.
-Implemented basic error handling for smooth server operations.
+
+Milestone 2: Project Setup and Login Page
+This milestone focused on setting up the project and creating a basic login page.
+
+Key Features
+Project Setup: Initialized the project with dependencies and folder structure.
+Login Page: Built a simple page with fields for username and password.
+Tech Stack
+Frontend: React.js, TailwindCSS
+
+
+Milestone 3: Server Setup and Error Handling
+Organized the backend and handled server errors effectively.
+
+Key Features
+Clear folder structure for backend code.
+Configured a Node.js server using Express.
+Integrated MongoDB for data storage.
+Implemented error handling to manage server operations.
 Tech Stack
 Backend: Node.js, Express
 Database: MongoDB, Mongoose
 
-# Milestone 4: User Management System with File Upload
-This project is a simple User Management System that allows the creation, retrieval, and management of user data. It also supports file uploads (like profile pictures) using Multer.
-Features
-User Model: Blueprint for storing user data in the database.
-User Controller: Manages operations like adding, retrieving, and updating user information.
-File Uploads: Accepts and stores user-uploaded files (e.g., profile images).
-Documentation: Well-documented code for ease of
 
-# Milestone 5: Project Signup Setup
-This milestone focuses on setting up the project structure and implementing a basic signup page.
+Milestone 4: User Management System with File Uploads
+Developed a user management system with file upload functionality.
+
 Key Features
-Project Setup: Initialized the project with the required dependencies and folder structure.
-Signup Page: A simple signup page with fields for Name Email Password User Photo.
-Tech Stack Used
-- Frontend: React
+User Model: Designed a schema for storing user data.
+File Uploads: Supported profile picture uploads using Multer.
+User Controller: Handled user creation, retrieval, and updates.
 
-# Milestone 6: This milestone focus on the password Encryption and User Data Storage
+
+Milestone 5: Signup Page Implementation
+Created a basic signup page for user registration.
+
 Key Features
-   1:Password Encryption: Used bcrypt to hash passwords.
-   2:User Data Storage: Saved user data securely in the user inputs.
-Tech stack used :
-Backend : node.js
+A form with fields for name, email, password, and user photo.
+Tech Stack
+Frontend: React
 
-# Milestone 7: In this milestone we are going to create a backend endpoint for user and the focus is on validating user credentials and verifying the encrypted password stored in the database.
-Key features:
-validate user credentials during login: Protect User Data: Keeps passwords safe even if the database is compromised. Privacy: Ensures passwords aren't stored in plain text. Compliance: Meets security standards like GDPR and PCI-DSS. Prevents Password Theft: Hashed passwords are difficult to decipher, increasing security.
-compare the encrypted password with the user’s input: User Enters Credentials:
-The user provides their email/username and password on the login page.
-Fetch User Data from Database:
-The backend retrieves the user record based on the provided email/username. If the user is not found, return an error: "User does not exist."
-Compare Encrypted Passwords:
-Process the user's input password using the same hashing algorithm (e.g., bcrypt). Compare the resulting hash to the stored hashed password. If they match, the user is authenticated; if not, send an error.
-Tech stalk: Backend : bcryptjs.
 
-# Milestone 8: In this milestone, we will create a frontend card component for products and design a homepage to display these cards for each product.
-Key features:
-create a card component: Showcase Products Effectively: Presents product details in a clear and visually appealing way. Reusable Design: Can be used across multiple pages or sections of the app. Improved User Experience: Makes it easy for users to browse and interact with products. Organized Layout: Keeps the homepage clean and structured.
-display those cards on the products page: Create a Dynamic Component: Design a single card component that accepts product details as props. Use Mapping: Use array mapping to iterate over the product list and render a card for each product. Pass Data Dynamically: Pass unique product information (e.g., name, price, image) to each card. Maintain Consistency: Ensure the layout remains uniform for all products.
-Tech stack : Frontend: react
+Milestone 6: Password Encryption and Data Storage
+Secured user data through password hashing and proper storage.
 
-# Milestone 9 : In this milestone, we will create a Createproduct page using react.
-Key features:
-We can add and remove images from the webpage.
-We can preview images.
-We can add our names and descriptions on it.
-We can specify content based on category.
-We can specify tags.
-We can specify prices range.
-We can include our preferred stock.
-We can add our e-mail.
-Tech Stack : React
+Key Features
+Password Encryption: Used bcrypt to hash passwords.
+User Data Storage: Stored user inputs securely.
+Tech Stack
+Backend: Node.js, bcrypt
 
-# Milestone 10 : In this we will create a mongoose schema for products and create and endpoint to store the product details.
-Key features :
-Wrote a product schema.
-Create an end point to validate and store product details in mongodb.
-Defined the structure of product data (e.g., name, description, price, image URL) using Mongoose. -Ensure each field has proper validation (e.g., required fields, correct data types).
-Built a POST endpoint to receive product data.
-Validated and saved the product details to MongoDB.
-Ensured that only valid data is saved in the database, maintaining data integrity and preventing errors.
-Tech Stack : React - frontend - multer.js, controller-product.js, model-product.js
 
-# Milestone 11 : In this milestone, we will make our home page that will display all the products dynamic.
-Key feautures :
-We wrote an endpoint that will send all the data that was saved in mongodb using add products page earlier.
-We wrote code for how to receive data at frontend.
-We learnt how to display that data dynamically using product card created earlier.
-Summarize : Wrote an endpoint that will send all products data to frontend. In frontend we wrote an function to get all the data Display these data dynamically passing to product card component.
-Tech Stack : React - frontend - Home.jsx,Product.jsx 
-Backend - user.js, multer.js,app.js
+Milestone 7: User Login and Credential Validation
+Focused on validating user credentials and ensuring secure authentication.
 
-# Milestone 12 : In this milestone, we will make our My products page that will display all the products That I added according to my mail.
-Key feautures : 
-We will write an endpoint that will send all the products with mail that was saved in MongoDB using add products page earlier.
-We wrote an endpoint that will send data by filtering with my mail and send data from mongodb.
-We learnt how to receive data at frontend -How to display that data dynamically using product card created earlier.
-Summary : Write an endpoint that will send all products with user mail to frontend In frontend write an function to get all the data Display these data dynamically passing to product card component.
-Tech Stack : React - frontend - pages - myProduct.jsx.
+Key Features
+Verified user credentials during login.
+Compared input passwords with stored hashed passwords.
+Provided error messages for invalid credentials.
+Tech Stack
+Backend: bcryptjs
 
-# Milestone 13 : In this miletone,  we will add an functionality to edit the uploaded products.
-Key feautures :
-We will add edit button and then write and backend endpoint to update the new details inside MongoDB database.
-How to write an endpoint that will update the existing data in MongoDB.
-How to auto fill the form with previous data and give option to edit.
-Summary : Write an endpoint that will receive new data and update the existing data inside MondoDB. In frontend we will add an edit button to the product card. When click on edit we will send the data to form and make it auto fill and have option to edit those data and save.
-Tech Stack : React - frontend - components - MyProduct.jsx
-Backend - controller - product.js
 
-# Milestone 14 : In this milestone, we will add an functionality to delete button to the product data and write and backend endpoint to delete the product with the use of ID.
-Key feautures:
-How to write an endpoint that delete the product with specific ID from MongoDB.
-Wrote an endpoint that will Delete the data form MongoDB using ID. 
-In frontend we will add an delete button to the product card. 
-When click on delete button we will send the product id to server endpoint.
-Summary : We created an delete option in myproducts
-Tech Stack : React - frontend - component - MyProduct.jsx
-Backend - controller - product.js
+Milestone 8: Product Card Component
+Designed a reusable product card and displayed products dynamically.
 
-# Milestone 15 : In this milestone, we will create and Navbar component and add nav component to every screen.
-Key feautures:
-Created an new Nav component with links to all pages: Home, My-products, Add product, Cart.
-Made the Navbar responsive to all screen sizes.
-We added the nav component to all the pages and make the navigations to all this pages smooth and easy.
-Summary : We created a NavBar component where we can access different pages directly just creating a button instead of changing the URL. And also we made the NavBar responsive according to device (..like Desktop and Mobilephone).
-Tech Stack : React - frontend - src - components - NavBar.jsx
-React - frontend - pages - Cart.jsx
+Key Features
+Created a dynamic card component to display product details.
+Mapped product data to render multiple cards.
+Tech Stack
+Frontend: React
 
-# Milestone 16 : In this milestone, we will create an product info page that display all the product data and choose quantity and add to card button.
-Key feautures:
-Created an new page that display all the product data.
-Add quantity and add to card button.
-Summary : We created an ProductDetails page to view the product with desired id, and added a count button with increase(+) and decrease(-) option in it.
-Tech Stack : React - frontend - src - pages - ProductDetails 
+
+Milestone 9: Product Creation Page
+Developed a page for adding new products.
+
+Key Features
+Added features for image upload, preview, and categorization.
+Included fields for price, stock, and description.
+Tech Stack
+Frontend: React
+
+
+Milestone 10: Mongoose Schema and Product Endpoint
+Built a backend schema and endpoint for product management.
+
+Key Features
+Defined product schema with validation.
+Created a POST endpoint to store product data in MongoDB.
+
+
+Milestone 11: Dynamic Homepage
+Made the homepage dynamic by displaying products from the database.
+
+Key Features
+Fetched product data from MongoDB.
+Dynamically displayed product details using the product card component.
+Tech Stack
+Frontend: React
+Backend: Node.js, Express
+
+
+Milestone 12: My Products Page
+Created a page to display products added by a specific user.
+
+Key Features
+Filtered products by the user’s email.
+Dynamically displayed filtered product data on the frontend.
+
+
+Milestone 13: Edit Product Functionality
+Enabled editing of product details.
+
+Key Features
+Added an "Edit" button to the product card.
+Pre-filled the form with existing product details for editing.
+Updated the database with new product details.
+
+
+Milestone 14: Delete Product Functionality
+Added a delete button to remove products from the database.
+
+Key Features
+Created an endpoint to delete products by ID.
+Integrated a delete button in the product card.
+
+
+Milestone 15: Responsive Navbar
+Implemented a responsive navbar for easy navigation.
+
+Key Features
+Added links to Home, My Products, Add Product, and Cart pages.
+Made the navbar adaptive to all screen sizes.
+
+
+Milestone 16: Product Details Page
+Designed a detailed product page with quantity selection.
+
+Key Features
+Displayed complete product information.
+Added "Add to Cart" and quantity adjustment buttons.
+Tech Stack
+Frontend: React
