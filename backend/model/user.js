@@ -63,6 +63,21 @@ const userSchema = new mongoose.Schema({
  },
  resetPasswordToken: String,
  resetPasswordTime: Date,
+  cart: [
+    {
+      productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product",
+        required: true,
+      },
+      quantity: {
+        type: Number,
+        required: true,
+        min: [1, "Quantity cannot be less than 1"],
+        default: 1,
+      },
+    },
+  ],
 });
 
 
@@ -91,6 +106,7 @@ userSchema.methods.getJwtToken = function () {
 userSchema.methods.comparePassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
+
 
 
 module.exports = mongoose.model("User", userSchema);
